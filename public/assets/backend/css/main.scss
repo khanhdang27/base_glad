@@ -1,0 +1,162 @@
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+* {
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+label, .title {
+    font-weight: 500 !important;
+}
+.sidebar-nav{
+    a{
+        padding-right: 30px !important;
+    }
+}
+.table-striped {
+    tbody tr {
+        &:nth-of-type(odd) {
+            background: rgba(3, 169, 243, 0.07);
+        }
+
+        &:hover {
+            background: rgba(3, 169, 243, 0.22);
+        }
+    }
+
+    .action {
+        min-width: 120px;
+    }
+}
+
+.form-control {
+    padding: 2px;
+
+    &.form-control-line {
+        border-bottom: 1px solid #d7d7d88c !important;
+    }
+}
+
+.image-box {
+    display: flex;
+    flex-wrap: wrap;
+
+    .image-item {
+        padding: 12px;
+        position: relative;
+
+        img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+        }
+
+        &.image-in-listing{
+            padding: 0;
+
+            img {
+                width: 90px;
+                height: 90px;
+                object-fit: cover;
+            }
+        }
+
+        .btn-remove{
+            position: absolute;
+            right: -7px;
+            top: -8px;
+            color: red;
+            background-color: white;
+            font-size: 16px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.form-group {
+    align-items: center;
+
+    input {
+        font-size: 16px;
+    }
+
+    .is-valid {
+        border-bottom: 1px solid #34ce57 !important;;
+    }
+
+    .invalid-feedback {
+        color: red;
+        font-size: 90%;
+    }
+
+    .select2 {
+        width: 100% !important;
+    }
+}
+
+.status-box {
+    padding: 0.3rem 1.5rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+.btn{
+    i{
+        font-size: 18px;
+    }
+}
+
+/*** Pagination ***/
+.pagination {
+    li {
+
+        a {
+            border: 1px solid #e5e5e5;
+            box-sizing: border-box;
+            display: inline-block;
+            min-width: 1.5em;
+            padding: .5em 1em;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(255, 153, 136, 0.64);
+                border: 1px solid rgba(255, 153, 136, 0.42);
+                color: white;
+            }
+
+            &.active {
+                border: 1px solid rgba(255, 153, 136, 0.64);
+                color: white;
+                background-color: #fb9678;
+            }
+
+            &.disabled {
+                cursor: default;
+                color: #838383;
+
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.elfinder {
+    .ui-widget-header {
+        background: inherit;
+    }
+}
